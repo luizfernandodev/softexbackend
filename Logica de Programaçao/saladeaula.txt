@@ -1,0 +1,3 @@
+Como pode ser visto na ilustração 02, a distribuição dos alunos conforme as disciplinas de português e matemática é feita da seguinte maneira: seja na fileira vertical ou horizontal 2 disciplinas de português e 4 de matemática ou o contrário, 2 de matemática e 4 de português. Na ilustração 03 após a saída do professor é possível notar uma fileira vertical apresentando 3 alunos que gostam de português 
+e 3 de matemática, fugindo do padrão caracterizado da ilustração 02. Logo de fácil identificação dos alunos que foram trocados, sendo o 
+que saiu gostando de matemática e o novo aluno que gosta de português.

@@ -1,0 +1,46 @@
+Algoritmo "cadastro"
+
+variaveis
+nome     caracter
+endereco caracter
+cidade   caracter
+cpf      caracter
+rg       inteiro
+idade    inteiro
+nomePai  caracter
+nomeMae  caracter
+peso     real
+renda    real
+
+inicio
+escreva("Nome: ")
+leia(nome)
+escreva("Endereço: ")
+leia(endereco)
+escreva("Cidade: ")
+leia(cidade)
+escreva("CPF: ")
+leia(cpf)
+escreva("RG: ")
+leia(rg)
+escreva("Idade: ")
+leia(idade)
+escreva("Nome do pai: ")
+leia(nomePai)
+escreva("Nome da mãe: ")
+leia(nomeMae)
+escreva("Peso: ")
+leia(peso)
+escreva("Renda bruta: ")
+leia(renda)
+
+escreva("Nome: ", nome)
+escreva("Endereço: ", endereco)
+escreva("Cidade: ", cidade)
+escreva("CPF: ", cpf)
+escreva("RG: ", rg)
+escreva("Nome do pai: ", nomePai)
+escreva("Nome da mãe: ", nomeMae)
+escreva("Peso: ", peso)
+escreva("Renda bruta: ", renda)
+FimAlgoritmo

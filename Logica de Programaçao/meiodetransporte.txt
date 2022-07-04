@@ -1,0 +1,91 @@
+Algoritmo "Meio de transporte"
+
+variaveis
+resp1,resp2,resp3,resp4,resp5,resp6,resp7,resp8,resp9,resp10,resp11,resp12,resp13: caracter
+
+inicio
+escreva("Seu tranporte é terrestre?")
+leia(resp1)
+se (resp1 == "sim") entao
+	escreva("cabe apenas uma pessoa?")
+	leia(resp2)
+		se (resp2 == "sim") entao
+			escreva("pesa toneladas?")
+			leia(resp3)
+				se (resp3 == "sim") entao
+					escreva("seu transporte é trator")
+				senao
+					escreva("seu transporte é bicicleta")
+				fimse
+		senao
+			escreva("ele possui rodas?)
+			leia(resp4)
+				se(resp4 == "sim") entao
+					escreva("é alto mais de 3m?)
+					leia(resp5)
+						se (resp5 == "sim") entao
+							escreva("tem cobrador?)
+							leia(resp6)
+								se (resp6 == "sim") entao
+									escreva("seu transporte é ônibus")
+								senao
+									escreva("seu tranporte é caminhão")
+								fimse
+						senao 
+							escreva("seu transporte é carrro")
+						fimse
+				senao
+					escreva("seu transporte é trem")
+				fimse
+
+		fimse
+senao
+	escreva("é aéreo?)
+	leia(resp7)
+		se (resp7 == "sim") entao
+			escreva("possui asas")
+			leia(resp8)
+				se (resp8 == "sim")
+					escreva("precisa pular para o voo?")
+					leia(resp9)
+						se (resp9 == "sim")
+							escreva("seu transporte é asa delta")
+						senao
+							escreva("seu tranporte é avião")
+						fimse
+				senao
+					escreva("é devagar?")
+					leia(resp10)
+						se (resp9 == "sim") entao
+							escreva("seu transporte é balão")
+						senao
+							escreva("seu transporte é helicoptero")
+						fimse
+				fimse
+		senao
+			escreva("é aquatico?")
+			leia(resp10)
+				se (resp10 == "sim") entao
+					escreva("é coberto d'água?")
+					leia(resp11)
+						se(resp11 == "sim") entao
+							escreva("seu transporte é submarino")
+						senao
+							escreva("é alto?")
+							leia(resp12)
+								se (resp12 == "sim") entao
+									escreva("seu transporte é navio")
+								senao
+									escreva("tem motor?")
+									leia(resp13)
+										se (resp13 == "sim") entao
+											escreva("seu transporte é lancha")
+										senao
+											escreva("seu transporte é barco")
+										fimse
+								fimse
+						fimse
+				fimse
+		fimse
+fimse
+fimalgoritmo
