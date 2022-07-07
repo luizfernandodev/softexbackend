@@ -1,0 +1,55 @@
+Algoritmo "Notas Vestibular"
+// Disciplina   : [Lógica de Programação]
+// Professor   : Reydne
+// Descrição   :
+// Autor(a)    : Luiz Fernando Lima de Souza
+// Data atual  : 07/07/2022
+Var
+// Seção de Declarações das variáveis 
+   nota, maiorNota: real
+   nome, turma: caracter
+   i, totalAprovados: inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+
+   maiorNota <- 0
+   
+   escreva("Informe a turma do aluno: A, B, C, D")
+   leia(turma)
+      se(turma == "A") entao
+       escrevaL("Cadastro turma A")
+      senao
+           se(turma == "B") entao
+               escrevaL("Cadastro turma B")
+           senao
+                se(turma == "C") entao
+                   escrevaL("Cadastro turma C")
+                     se(turma == "D") entao
+                       escrevaL("Cadastro turma D")
+                     fimse
+                fimse
+           fimse
+       fimse
+   para i de 1 ate 25 faca
+      escreva("Digite nome do aluno: ")
+      leia(nome)
+      escreva("Informe a nota: ")
+      leia(nota)
+      
+      se (nota > maiorNota) entao
+         maiorNota <- nota
+         melhorAluno <- nome
+      fimse
+      se (nota >= 7) entao
+         escreva("Aluno Aprovado")
+         totalAprovados <- totalAprovados + 1
+      senao
+           escreva("Aluno Reprovado")
+      fimse
+   fimpara
+
+   EscrevaL("O numero de aprovados foi de", totalAprovados)
+   EscrevaL("O melhor aluno ",melhorAluno, " obteve nota", maiorNota)
+   
+fimalgoritmo
