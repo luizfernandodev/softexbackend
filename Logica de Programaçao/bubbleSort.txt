@@ -7,7 +7,7 @@ Algoritmo "bubbleSort"
 Var
    // Seção de Declarações das variáveis
    v: vetor [1..10] de Inteiro
-   i, j, aux: Inteiro
+   i, n, aux: Inteiro
 
 Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
@@ -16,12 +16,12 @@ Inicio
       leia(v[i])
    fimpara
 
-   para i <- 1 ate 9 faca
-      para j <- i + 1 ate 10 faca
-         se (v[i] > v[j]) entao
+   para n <- 1 ate 9 faca
+      para i <- i + 1 ate 10 faca
+         se (v[i] > v[i+1]) entao
             aux <- v[i]
-            v[i] <- v[j]
-            v[j] <- aux
+            v[i] <- v[i+1]
+            v[i+1] <- aux
          fimse
       fimpara
    fimpara
