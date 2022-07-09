@@ -1,0 +1,33 @@
+Algoritmo "bubbleSort"
+// Disciplina   : [Lógica de Programação]
+// Professor   : Rydne
+// Descrição   : Metodo Bubble sort
+// Autor(a)    : Luiz Fernando
+// Data atual  : 09/07/2022
+Var
+   // Seção de Declarações das variáveis
+   v: vetor [1..10] de Inteiro
+   i, j, aux: Inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   para i <- 1 ate 10 faca
+      Escreva("Digite um valor: ")
+      leia(v[i])
+   fimpara
+
+   para i <- 1 ate 9 faca
+      para j <- i + 1 ate 10 faca
+         se (v[i] > v[j]) entao
+            aux <- v[i]
+            v[i] <- v[j]
+            v[j] <- aux
+         fimse
+      fimpara
+   fimpara
+   
+   para i <- 1 ate 10 faca
+        escreval("[", v[i], "]")
+   fimpara
+   
+Fimalgoritmo
