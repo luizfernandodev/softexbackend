@@ -7,7 +7,8 @@ Algoritmo "bubbleSort"
 Var
    // Seção de Declarações das variáveis
    v: vetor [1..10] de Inteiro
-   i, n, aux: Inteiro
+   troca: logico
+   i, aux: inteiro
 
 Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
@@ -15,19 +16,21 @@ Inicio
       Escreva("Digite um valor: ")
       leia(v[i])
    fimpara
-
-   para n de 1 ate 9 faca
-      para i de i + 1 ate 10 faca
-         se (v[i] > v[i+1]) entao
-            aux <- v[i]
-            v[i] <- v[i+1]
-            v[i+1] <- aux
-         fimse
-      fimpara
+   
+   troca <- verdadeiro
+   enquanto troca = verdadeiro faca
+            troca <- falso
+            para i de 1 ate 9 faca
+                 se (v[i] > v[i+1]) entao
+                    aux <- v[i]
+                    v[i] <- v[i+1]
+                    v[i+1] <- aux
+                    troca <- verdadeiro
+                 fimse
+            fimpara
+   fimenquanto
+   
+   para i de 1 ate 10 faca
+      escreval(v[i])
    fimpara
-
-   para i <- 1 ate 10 faca
-        escreval("[", v[i], "]")
-   fimpara
-
 Fimalgoritmo
