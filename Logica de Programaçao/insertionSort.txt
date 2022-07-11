@@ -1,0 +1,42 @@
+Algoritmo "insertionSort"
+// Disciplina   : [Algoritmos e Estrutura de Dados]
+// Professor   : Reydne
+// Descrição   : Metodo de ordenação Insertion sort
+// Autor(a)    : Luiz Fernando Lima de Souza
+// Data atual  : 11/07/2022
+Var
+   // Seção de Declarações das variáveis
+   num: vetor [1..5] de inteiro
+   i, j, aux: inteiro
+
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+
+   para i de 1 ate 5 faca
+      escreva("Digite um numero impar:")         //5,3,10,1,6
+      leia(num[i])
+      se (num[i] mod 2 = 0) entao
+         escreval("Este numero não é impar,", num[i], " ,insira um numero IMPAR!!!")
+         interrompa
+      fimse
+   fimpara
+
+   para i de 2 ate 5 faca
+      aux <- num[i]
+      j <- i-1
+      enquanto ((j >=1) e (aux < num[j])) faca
+         num[j+1] <- num[j]
+         j <- j -1
+         se j = 0 entao
+            interrompa
+         fimse
+      fimenquanto
+
+      num[j+1] <- aux
+   fimpara
+
+   para i de 1 ate 5 faca
+      escreval(num[i])
+   fimpara
+Fimalgoritmo
