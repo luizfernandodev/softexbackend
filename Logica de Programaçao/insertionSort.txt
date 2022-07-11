@@ -6,15 +6,15 @@ Algoritmo "insertionSort"
 // Data atual  : 11/07/2022
 Var
    // Seção de Declarações das variáveis
-   num: vetor [1..5] de inteiro
+   num: vetor [1..30] de inteiro
    i, j, aux: inteiro
 
 
 Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
 
-   para i de 1 ate 5 faca
-      escreva("Digite um numero impar:")         //5,3,10,1,6
+   para i de 1 ate 30 faca
+      escreva("Digite um numero impar:")         
       leia(num[i])
       se (num[i] mod 2 = 0) entao
          escreval("Este numero não é impar,", num[i], " ,insira um numero IMPAR!!!")
@@ -22,7 +22,7 @@ Inicio
       fimse
    fimpara
 
-   para i de 2 ate 5 faca
+   para i de 2 ate 30 faca
       aux <- num[i]
       j <- i-1
       enquanto ((j >=1) e (aux < num[j])) faca
@@ -36,7 +36,7 @@ Inicio
       num[j+1] <- aux
    fimpara
 
-   para i de 1 ate 5 faca
+   para i de 1 ate 30 faca
       escreval(num[i])
    fimpara
 Fimalgoritmo
