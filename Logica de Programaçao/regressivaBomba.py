@@ -1,6 +1,6 @@
-from time import sleep
+import time
 print("Iniciando contagem regressiva")
 for i in range(10,0,-1):
     print(i)
-    sleep(1)
+    time.sleep(1)
 print("BUM!")
