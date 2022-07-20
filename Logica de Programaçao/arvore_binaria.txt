@@ -1,0 +1,77 @@
+Algoritmo "arvore_binaria"
+// Descrição   : implentação de uma árvore binária
+// Autor(a)    : Reydne
+// Data atual  : 14/1/2022
+Const
+   TAM_VETOR=20
+
+Var
+// Seção de Declarações das variáveis
+   vet1:vetor[1..TAM_VETOR] de inteiro
+   vet2:vetor[1..TAM_VETOR] de inteiro
+   i, elemento, posicao,aux inteiro
+
+procedimento incluir()
+vet1:[45,20,30,60,81,97,100,7,8,4]
+vet2:[15,6,18,3,7,16,20,4]
+inicio
+   limpatela
+   repita
+      escreval("-----Incluir Elemento----")
+      escreva("Informe um elemento(0 para sair):")
+      leia(elemento)
+      se elemento<>0 entao
+         incluir_com_posicao(1,elemento)
+      fimse
+      mostrar_vetor()
+   ate elemento=0 faca
+fimprocedimento
+
+procedimento incluir_com_posicao(posicao, elemento:inteiro)
+inicio
+
+   se posicao > TAM_VETOR entao
+         escreval("Não há mais espaço no Vetor")
+   senao
+      se vet[posicao]=elemento entao
+         escreval("Elemento já adicionado anteriormente!")
+      senao
+         se vet[posicao]=0 entao
+            vet[posicao]<-elemento
+         senao
+            se elemento < vet[posicao] entao
+               aux<- posicao*2
+               incluir_com_posicao(aux, elemento)
+            senao
+               aux<-posicao*2+1
+               incluir_com_posicao(aux,elemento)
+            fimse
+         fimse
+      fimse
+   fimse
+fimprocedimento
+
+procedimento remover ()
+inicio
+   limpatela
+   escreval("------Remover Elemento---")
+   mostrar_vetor()
+   repita
+      escreva("Informe o elemento: ")
+      leia(elemento)
+      se elemento<> 0 entao
+         aux<-buscar_com_posicao(1,elemento)
+         se aux =0 entao
+            escreval("Elemento não encontrado")
+         senao
+            remover_com_posicao(aux)
+            escreval("Elemento excluído com sucesso!")
+            mostrar_vetor()
+         fimse
+      fimse
+   ate elemento=0 faca
+fimprocedimento
+
+procedimento remover_com_posicao(posicao:inteiro)
+
+Fimalgoritmo

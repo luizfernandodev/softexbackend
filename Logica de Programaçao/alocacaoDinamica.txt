@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main ()
+{
+    int  *ptr, v1, v2, i;
+    printf(Informe o tamanho do vetor\n");
+    scanf("%i" ,&v1);
+    
+    ptr = (int*) malloc(v1 * sizeof(int));
+    
+    printf("Memoria alocada")
+    
+    for(i = 0; i < v1; i++)
+    
+        printf("%u\n", ptr + i);
+    
+    printf("\nInforme o no tamanho: ");
+    scanf("%i", &v2);
+ 
+    ptr = realloc(ptr, v2 * sizeof(int));
+
+    printf("Nova memoria alocada");
+
+    for(i = 0; i < v2; i++)
+ 
+        printf("%u\n", ptr + i);
+		
+    free(ptr);
+
+
+    return 0
+
+}
+
+
+		
+    
+        

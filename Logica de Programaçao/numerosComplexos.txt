@@ -1,0 +1,33 @@
+ 
+if __name__ == "__main__":
+
+    n1 = complex(8, 10)
+    n2 = complex(-3, -5)
+    n3 = complex(0, 3)
+  
+    soma = n1 + n2 + n3
+
+    subt = n1 - n2 - n3
+    
+    multi = n1 * n2 * n3
+	
+    div = n1 / n2 / n3
+  
+ 
+    print("A propriedade real da soma é:", soma.real)
+    print("A propriedade imaginária da soma é:", soma.img)
+    print(soma)
+    
+    print("A propriedade real da subtraçao é:", subt.real)
+    print("A propriedade imaginária da subtraçao é:", subt.img)
+    print("subt)
+   
+    print("A propriedade real da multiplicaçao é:", multi.real)    
+    print("A propriedade imaginária da multiplicaçao é:", multi.img)
+    print(multi)
+
+    print("A propriedade real da divisao é:", div.real)    
+    print("A propriedade imaginária da divisao é:", divisao.img)
+    print(multi)
+    
+  
