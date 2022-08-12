@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calc(num1,num2,op){
+            if (op == '+')
+            alert(`O resultado é: ${num1 + num2}`)
+            else if (op == '-')
+            alert(`O resultado é: ${num1 + num2}`)
+            else if (op == '*')
+            alert(`O resultado é: ${num1 + num2}`)
+            else if (op == '/')
+                if (num2 != 0)
+                alert(`O resultado é: ${num1 / num2} , O resto da divisao é: ${num1 % num2}`)
+                else 
+                alert('Divisão por zero')
+        }
+        var num1 = 0
+        var num2 = 0
+        var op = ''
+
+        number1 = Number.parseInt(prompt('Digite o primeiro numero: '))
+        number2 = Number.parseInt(prompt('Digite o segundo valor: '))
+        op = prompt('Digite a operção a realizar: soma +, subtração -, multiplicação *, divisão /')
+        calc(num1,num2,op)      
+
+    </script>
+</body>
+</html>
