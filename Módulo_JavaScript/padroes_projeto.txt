@@ -1,0 +1,8 @@
+Prototype - "Especificar os tipos de objetos a serem acriados usando uma instância-protótipo
+e criar novos objetos pela cópia desse protótipo." Em outras palavaras permite ter um objeto
+real pronto uma instância de uma classe e a partir dessa instância clonar ela, ou seja, criar 
+novos objetos a partir de uma instância. Evita problemas de performance, identificar falhas,
+criação de pyfill.
+- Livro "Padrões de Projetos: Soluções Reutilizáveis de Software 
+Orientados a Objetos" 
+- https://developer.mozilla.org/pt-BR/docs/Web/JavaScript
