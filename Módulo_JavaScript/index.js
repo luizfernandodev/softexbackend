@@ -19,13 +19,13 @@ let banco = {
     }
 }
 
-console.log(Banco.buscarSaldo());
+console.log(banco.buscarSaldo());
 
-console.log(Banco.deposito(100));
+console.log(banco.deposito(100));
 
-console.log(Banco.saque(100));
+console.log(banco.saque(100));
 
-console.log(Banco.conta);
+console.log(banco.conta);
 
 
 
