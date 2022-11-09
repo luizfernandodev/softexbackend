@@ -1,0 +1,14 @@
+{
+  "name": "exec-nodejs",
+  "version": "1.0.0",
+  "description": "Exercicio nodejs para identificar os primeiros passos de um projeto nodejs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luiz Fernando",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
