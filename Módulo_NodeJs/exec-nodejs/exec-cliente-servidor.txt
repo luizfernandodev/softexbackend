@@ -1,0 +1,5 @@
+Com base nos vídeos 1 e 2, explique como a web funciona a partir do ponto de vista do protocolo cliente servidor. Crie o começo de um projeto em node.js, usando o npm e informe os comandos utilizados.
+
+Trata-se de um modelo de comunicação entre os dispositivos através de uma rede. O cliente, nesse contexto, faz solicitações de serviços ao servidor, responsável por atender a esses requisitos.
+
+Com essa arquitetura, as tarefas são distribuídas entre os servidores (que fornecem os serviços) e os clientes (que exigem esses serviços). Por outras palavras: o cliente solicita ao servidor um recurso, que fornece uma resposta.
