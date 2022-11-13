@@ -3,22 +3,18 @@ Explique como rodar e testar.*/
 
 
 //Importando a bilbioteca padrão HTTP do nodejs .
-const { criarServer } = require("http");
+const http = require("http");
 
 //Criando a variavel para configuração da porta.
 const PORTA = process.env.PORT || 8080;
 
-//Criando a variável principal do servidor
-const servidor = criarServer();
 
-//Para qualquer requisição web ser respondida com o "Olá Mundo!"
-servidor.on("request",(request, response) => {
-    response.end("Olá Mundo!");
-});
-
-
+//Para qualquer requisição web ser respondida com o "Olá Mundo!" 
 //Exibir mensagem de que o servidor está rodando.
-servidor.listen(PORT, () => {
+
+http.createServer((request, response) => {
+    response.end("Ola Mundo!");
+}).listen(PORTA, () => {
     console.log(`Servidor na porta ${PORTA}`);
 });
 
