@@ -13,7 +13,7 @@ router.get('/produtos/:id', (req, res) => {
     const { id } = req.params;
 
     if (id <= produtos.length){
-        return res.status(200).json(produtos[id]);
+        return res.status(200).send('Item encontrado').json(produtos[id]);
     }
     else {
         return res.status(404).send(`Produto com ${id} não encontrado`);
