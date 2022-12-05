@@ -1,0 +1,30 @@
+<!--chamada SOAP pode ser estruturada -->
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+  <soap:Header>
+  </soap:Header>
+  <soap:Body>
+    <m:GetUser>
+      <m:UserId>123</m:UserId>
+    </m:GetUser>
+  </soap:Body>
+</soap:Envelope>
+
+<!--E a resposta pode ser mais ou menos assim:-->
+
+<?xml version="1.0"?>
+
+<soap:Envelope
+xmlns:soap="http://www.w3.org/2003/05/soap-envelope/"
+soap:encodingStyle="http://www.w3.org/2003/05/soap-encoding">
+
+<soap:Body>
+  <m:GetUserResponse>
+    <m:Username>Tony Stark</m:Username>
+    <m:Adress>Malibu</m:Adress>
+    <m:Numberphone>2129704133</Numberphone>
+  </m:GetUserResponse>
+</soap:Body>
+
+</soap:Envelope>
